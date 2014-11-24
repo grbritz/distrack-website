@@ -72,7 +72,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background-color: #34495e;
+	background-color: white;
 	padding-top: 60px;
 }
 
@@ -103,7 +103,6 @@ a:after {
 
 #intro {
 	padding-top: 50px;
-	border-top: #bdc3c7 solid 5px;
 }
 
 #features {
