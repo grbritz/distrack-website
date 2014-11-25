@@ -66,6 +66,10 @@ a:after {
     padding: 0;
 }
 
+#navigation {
+    background-color: #2A394B;
+}
+
 
 /* ==========================================================================
    Wrap Sections
