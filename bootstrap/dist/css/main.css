@@ -66,11 +66,14 @@ a:after {
     padding: 0;
 }
 
-#navigation {
-    background-color: #2A394B;
+.navbar-default .navbar-nav > li > a {
+  color: black;
 }
 
-
+.navbar-default {
+    background-color: white;
+    border-bottom: none;
+}
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
