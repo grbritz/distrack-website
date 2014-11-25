@@ -76,8 +76,9 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background-color: white;
-	padding-top: 60px;
+	/*background-color: white;*/
+	background-color: #34495e;
+    padding-top: 60px;
 }
 
 #headerwrap h1 {
