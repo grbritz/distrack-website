@@ -88,7 +88,7 @@ section {
 }
 
 .background-dark {
-    background: #34495e;
+    background: #618C9B;
     color: #fff;
 }
 
@@ -145,6 +145,10 @@ section#home p {
 /******************************
 Team Section
 ******************************/
+#team {
+    color: black;
+}
+
 #team .team-member-photo-wrap {
     /*float: left;*/
     /*padding-right: 25px;*/

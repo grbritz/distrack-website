@@ -14,6 +14,7 @@
     <!-- Custom styles for this template -->
     <link href="bootstrap/dist/css/main.css" rel="stylesheet">
     
+    <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
@@ -21,6 +22,14 @@
     <script src="bootstrap/dist/js/jquery.min.js"></script>
     <script src="bootstrap/dist/js/smoothscroll.js"></script>
     
+    <!-- Scrolling Layout -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/component.css" />
+    <script src="bootstrap/dist/js/modernizr.custom.js"></script>
+    
+    <!-- Shaking effect -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
   </head>
 
@@ -35,17 +44,17 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-                <a class="navbar-brand" href="#" style="font-size:20pt;font-family:'Helvetica Neue';"><b style="color:#E62F33;"><i>D</i>is</b><b style="color:#3FAFE1;"><i>T</i>rack</b></a>
+                <a class="navbar-brand" href="#" style="font-size:20pt;font-family:'Helvetica Neue';color:black;font-weight:300;">DisTrack</a>
 	        </div>
             <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="#home" class="smothscroll">About</a></li>
 	            <li><a href="#video" class="smothscroll">Video</a></li>
 	            <li class="dropdown">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle smothscroll">Features <b class="caret"></b></a>
+                    <a data-toggle="dropdown" class="dropdown-toggle smothscroll">Features <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Desktop Application</a></li>
-                        <li><a href="#">Smart Watch</a></li>
+                        <li><a href="#desktop">Desktop Application</a></li>
+                        <li><a href="#smartwatch">Smart Watch</a></li>
                     </ul>
                 </li>
 	            <li><a href="#team" class="smothscroll">Team</a></li>
@@ -56,36 +65,131 @@
 
 
 	<section id="home" name="home">
-	    <div class="container" style="background-color:rgba(0, 0, 0, 0);padding-bottom:80px;">
+	    <div class="container" style="background-color:rgba(0, 0, 0, 0);padding-bottom:80px;padding-top:80px;">
 	    	<div class="row centered">
 	    		<div class="col-lg-8">
-	    			<img class="img-responsive" src="bootstrap/dist/img/cover.png" alt="" style="margin-top:-20px;">
+	    			<img id="postercover" class="img-responsive" src="bootstrap/dist/img/laptop.png" alt="" style="position: absolute; top:40px; left:0;">
+                    <img id="watchcover" class="img-responsive" src="bootstrap/dist/img/watch.png" alt="" style="position:absolute; top:40px;left:0;">
 	    		</div>
                 <div class="col-lg-4" style="text-align:left;">
                     <h1>Beat Distractions, <strong>Refocus Yourself</strong></h1>
                     <p class="big-spaced">
-                    	With so many distractions out there today, its nearly impossible to stay focused while working or studying.
+                    	With so many distractions out there today, it's nearly impossible to stay focused while working or studying.
                     </p>
                     <p class="big-spaced">
-                    	DisTrack helps you be more productive by giving you insight into your work habits and providing you with tools to use to stay focused.
+                    	DisTrack helps you to be more productive by giving you insight into your work habits and providing you with tools to stay focused.
                     </p>
                     <h4><strong>Visit our poster session:</strong></h4>
                     <p>
-                    	Monday, December 8th 10:30am @ CSE Atrium
+                        <u>Monday, December 8th 10:30am @ CSE Atrium</u>
                     </p>
                 </div>
 	    	</div>
 	    </div> <!--/ .container -->
 	</section> <!--/ #home -->
 	
+    <script>
+            $(document).ready(function(){
+                $("#watchcover").delay(1000).effect("shake", {distance:4, times:10}, 200);         
+            });
+    </script>
 
+      
+    <section id="desktop" name="desktop">
+		<div id="intro" class="container">
+			<div class="row">
+				<h1 class="centered">Desktop Application</h1>
+				<div id="cbp-fbscroller" class="cbp-fbscroller col-lg-12">
+                    <section id="fbsection6" class="row">
+                        <div class="col-lg-4" style="color:black;;padding-bottom:50px;">
+                            <h3 style="color:#E62F33;">Feature #1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                        <div class="col-lg-8"></div>
+                    </section>
+                    <section id="fbsection7" class="row">
+                        <div class="col-lg-4" style="color:black;padding-top:50px;padding-bottom:50px;">
+                            <h3 style="color:#3FAFE1;">Feature #2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                        <div class="col-lg-8"></div>
+                    </section>
+                    <section id="fbsection8" class="row"> 
+                        <div class="col-lg-4" style="color:black;padding-top:50px;padding-bottom:50px;">
+                            <h3 style="color:#E62F33;">Feature #3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                        <div class="col-lg-8"></div>
+                    </section>
+                    <section id="fbsection9" class="row">
+                        <div class="col-lg-4" style="color:black;padding-top:50px;padding-bottom:50px;">
+                            <h3 style="color:#3FAFE1;">Feature #4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                        <div class="col-lg-8"></div>
+                    </section>
+				</div>
+			</div>
+            <br>
+            
+		</div><!--/ .container -->
+    </section>
+	
+    <section id="smartwatch" name="smartwatch">
+		<div class="container">
+			<div class="row" >
+                <hr>
+				<h1 class="centered" style="padding-top:20px;">Smart Watch</h1>
+				<div id="cbp-fbscroller" class="cbp-fbscroller col-lg-12">
+                    <section id="fbsection1" class="row">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6" style="color:black;padding-bottom:50px;">
+                            <h3 style="color:#E62F33;">Feature #1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                    </section>
+                    <section id="fbsection2" class="row">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6" style="color:black;padding-top:50px;padding-bottom:50px;">
+                            <h3 style="color:#3FAFE1;">Feature #2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                    </section>
+                    <section id="fbsection3" class="row">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6" style="color:black;padding-top:50px;padding-bottom:50px;">
+                            <h3 style="color:#E62F33;">Feature #3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                    </section>
+                    <section id="fbsection4" class="row">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6" style="color:black;padding-top:50px;padding-bottom:50px;">
+                            <h3 style="color:#3FAFE1;">Feature #4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                    </section>
+                    <section id="fbsection5" class="row">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6" style="color:black;padding-top:50px;padding-bottom:50px;">
+                            <h3 style="color:#E62F33;">Feature #5</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus velit eget sagittis bibendum. Nunc eleifend suscipit ipsum                                  rutrum gravida. Aliquam eu metus a magna luctus laoreet et a sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam                                  malesuada eu quam et gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at turpis ac ipsum cursus vehicula                                  at eget dolor. Suspendisse in imperdiet nibh, at imperdiet nisi. Quisque commodo vitae mi vel commodo. Vestibulum ac hendrerit                                    turpis. Fusce a lacus hendrerit, efficitur ante non, consectetur lorem. Vivamus egestas porttitor nisi nec consectetur. Sed                                        consequat non lectus ac condimentum. Sed lobortis venenatis nunc vitae vulputate.</p>
+                        </div>
+                    </section>
+				</div>
+			</div>
+		</div><!--/ .container -->
+    </section>
+      
 	<section id="video" name="video" class="background-dark">	
 		<div class="container centered">
-			<h2><strong>Video Demo</strong></h2>
+			<h1 class="centered">Video Demo</h1>
+            <h4><i>See how it works!</i></h4>
+            <br>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<video width="100%" controls>
-						<source src="video.mp4">
+						<source src="video.mp4" type="video/mp4">
 						Your browser is too old, get a new one!
 					</video>
 				</div>
@@ -93,138 +197,63 @@
 		</div>
 	</section><!-- /#video -->
 	
-	<!-- FEATURES WRAP -->
-	<div id="features">
-		<div class="container">
-			<div class="row">
-				<h1 class="centered">Smart Watch</h1>
-				<br>
-				<br>
-				<div class="col-lg-6 centered">
-					<img class="centered" src="bootstrap/dist/img/mobile.png" alt="">
-				</div>
-				
-				<div class="col-lg-6">
-					<h3>Some Features</h3>
-					<br>
-				<!-- ACCORDION -->
-		            <div class="accordion ac" id="accordion2">
-		                <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		                        First Class Design
-		                        </a>
-		                    </div><!-- /accordion-heading -->
-		                    <div id="collapseOne" class="accordion-body collapse in">
-		                        <div class="accordion-inner">
-								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>
-		
-		                <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		                        Retina Ready Theme
-		                        </a>
-		                    </div>
-		                    <div id="collapseTwo" class="accordion-body collapse">
-		                        <div class="accordion-inner">
-								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>
-		
-		                 <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-		                        Awesome Support
-		                        </a>
-		                    </div>
-		                    <div id="collapseThree" class="accordion-body collapse">
-		                        <div class="accordion-inner">
-								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>
-		                
-		                 <div class="accordion-group">
-		                    <div class="accordion-heading">
-		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-		                        Responsive Design
-		                        </a>
-		                    </div>
-		                    <div id="collapseFour" class="accordion-body collapse">
-		                        <div class="accordion-inner">
-								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div><!-- /accordion-inner -->
-		                    </div><!-- /collapse -->
-		                </div><!-- /accordion-group -->
-		                <br>			
-					</div><!-- Accordion -->
-				</div>
-			</div>
-		</div><!--/ .container -->
-	</div><!--/ #features -->
-	<section id="team" name="team" class="background-dark">
+	<section id="team" name="team">
 	 	<div class="container">
-		 	<h2 class="centered"><strong>Meet The Team</strong></h2>
+		 	<h1 class="centered">Meet The Team</h1>
+            <br>
 		 	<div class="row">
 			 	<div class="col-md-4 team-member centered">
-	 					<img src="bootstrap/dist/img/face-placeholder.png" width="150px" />
+                        <img src="bootstrap/dist/img/graeme.jpg" width="150px" height="150px" class="img-circle" alt="Circular Image">
 	 					<br />
 	 					<h3 class="name">Graeme Britz</h3>
 		 				<p class="details">
 		 					Project Manager
 		 					<br>
-		 					grbritz (at) uw.edu
+		 					grbritz@uw.edu
 		 				</p>
 			 	</div> <!-- /.team-member -->
 			 	<div class="col-md-4 team-member centered">
-	 					<img src="bootstrap/dist/img/face-placeholder.png" width="150px" />
+	 					<img src="bootstrap/dist/img/jackie.jpg" width="150px" height="150px" class="img-circle" alt="Circular Image">
 	 					<br />
 	 					<h3 class="name">Jackie Chui</h3>
 		 				<p class="details">
 		 					Designer &amp; Videographer
 		 					<br>
-		 					jackie2009hk (at) gmail.com
+		 					jackie2009hk@gmail.com
 		 				</p>
 			 	</div> <!-- /.team-member -->
 			 	
 			 	<div class="col-md-4 team-member centered">
-	 					<img src="bootstrap/dist/img/face-placeholder.png" width="150px" />
+	 					<img src="bootstrap/dist/img/max.jpg" width="150px" height="150px" class="img-circle" alt="Circular Image">
 	 					<br />
 	 					<h3 class="name">Max Suffel</h3>
 		 				<p class="details">
 		 					User Researcher
 		 					<br>
-		 					msuffel (at) uw.edu
+		 					msuffel@uw.edu
 		 				</p>
 			 	</div> <!-- /.team-member -->
 		 	</div> 
 		 	<br>
 	 		<div class="row">
 	 			<div class="col-md-4 team-member centered">
-	 					<img src="bootstrap/dist/img/face-placeholder.png" width="150px" />
+	 					<img src="bootstrap/dist/img/angel.jpg" width="150px" height="150px" class="img-circle" alt="Circular Image">
 	 					<br />
 	 					<h3 class="name">Maria Angela Suhardi</h3>
 		 				<p class="details">
 		 					Designer
 		 					<br>
-		 					maria.suhardi (at) gmail.com
+		 					maria.suhardi@gmail.com
 		 				</p>
 			 	</div> <!-- /.team-member -->
 			 	<div class="col-md-4 team-member centered">
-	 					<img src="bootstrap/dist/img/face-placeholder.png" width="150px" />
+	 					<img src="bootstrap/dist/img/bryan.jpg" width="150px" height="150px" class="img-circle" alt="Circular Image">
 	 					<br />
 	 					<h3 class="name">Bryan Djunaedi</h3>
 		 				<p class="details">
 		 					Designer &amp; Editor
 		 					<br>
-		 					b.dju90 (at) gmail.com
+		 					b.dju90@gmail.com
 		 				</p>
 			 	</div> <!-- /.team-member -->
 	 		</div>
@@ -259,6 +288,20 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
+	<script src="bootstrap/dist/js/jquery.easing.min.js"></script>
+	<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+    <script src="bootstrap/dist/js/waypoints.min.js"></script>
+	<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+	<script src="bootstrap/dist/js/jquery.debouncedresize.js"></script>
+	<script src="bootstrap/dist/js/cbpFixedScrollLayout.min.js"></script>
+    <script>
+	   $(function() {
+        cbpFixedScrollLayout.init();
+       });
+    </script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
 	<script>
 	$('.carousel').carousel({
