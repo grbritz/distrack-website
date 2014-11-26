@@ -2,7 +2,7 @@
 body {
   background-color: #f2f2f2;
     font-family: "Lato";
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     color: #555;
     padding-top: 50px;
@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
+    
+}
+
+p.big-spaced { 
     margin-bottom: 25px;
 }
 
@@ -78,33 +82,49 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
-	/*background-color: white;*/
-	background-color: #34495e;
-    padding-top: 60px;
+section {
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
-#headerwrap h1 {
-	margin-top: 30px;
-	color: white;
-	font-size: 70px;
-	
+.background-dark {
+    background: #34495e;
+    color: #fff;
 }
 
-#headerwrap h3 {
-	color: white;
+.background-dark h1, .background-dark h2, .background-dark h3, .background-dark h4,
+.background-dark h5, #home h1, #home h2, #home h3, #home h4,  #home h5 {
+    color: #fff;
+}
+
+section#home {
+    background-image: url('../img/blurred.jpg');
+    padding-top:60px;
+    padding-bottom: 0px;
+    color: #fff;
+    font-weight:400;
+}
+
+section#home h1 {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+section#home h3 {
 	font-size: 30px;
 }
 
-#headerwrap h5 {
-	color: white;
+section#home h5 {
 	font-weight: 700;
 	text-align: left;
 }
 
-#headerwrap p {
+section#home p {
 	text-align: left;
-	color: white
+}
+
+#video {
+    padding-bottom: 65px;
 }
 
 /* intro Wrap */
@@ -122,18 +142,37 @@ a:after {
 	font-size: 20px;
 }
 
-/* Showcase Wrap */
-
-#showcase {
-	display: block;
-	background-color: #34495e;
-	padding-top: 50px;
-	padding-bottom: 50px;
+/******************************
+Team Section
+******************************/
+#team .team-member-photo-wrap {
+    /*float: left;*/
+    /*padding-right: 25px;*/
 }
 
-#showcase h1 {
-	color: white;
+#team .team-member img {
+    width: 150px;
 }
+
+#team .team-member {
+    float: left;
+}
+
+#team .team-member .name {
+    margin-top:10px;
+    margin-bottom:0px;
+    font-weight:bold;
+}
+#team .team-member .title {
+    margin-bottom:0px;
+}
+
+#team .team-member .details {
+    line-height: 22px;
+}
+ 
+
+
 
 #footerwrap {
 	background-color: #2f2f2f;
@@ -141,6 +180,10 @@ a:after {
 	padding-top: 40px;
 	padding-bottom: 60px;
 	text-align: left;
+}
+
+#footerwrap a {
+    
 }
 
 #footerwrap h3 {
@@ -164,4 +207,3 @@ a:after {
 #c p {
 	color: white
 }
-
