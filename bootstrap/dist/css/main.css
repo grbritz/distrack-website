@@ -125,6 +125,7 @@ section#home p {
 }
 
 #video {
+    padding-top: 65px;
     padding-bottom: 65px;
     background-color: #2f2f2f;
 }
