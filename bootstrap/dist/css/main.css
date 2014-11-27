@@ -101,7 +101,7 @@ section {
 section#home {
     background-image: url('../img/blurred.jpg');
     padding-top:60px;
-    padding-bottom: 60px;
+    padding-bottom: 150px;
     color: #fff;
     font-weight:400;
 }
@@ -125,7 +125,7 @@ section#home p {
 }
 
 #video {
-    padding-top: 65px;
+    padding-top: 15px;
     padding-bottom: 65px;
     background-color: #2f2f2f;
 }
