@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     color: #555;
     padding-top: 50px;
+    position: relative;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -78,6 +79,17 @@ a:after {
     background-color: white;
     border-bottom: none;
 }
+
+#navigation {
+    margin-bottom:-50px;
+}
+
+.navbar-brand {
+    font-size:20pt;
+    font-family:'Helvetica Neue';
+    color:black;
+    font-weight:300;
+}
 /* ==========================================================================
    Wrap Sections
 ========================================================================== */
@@ -102,6 +114,7 @@ section#home {
     background-image: url('../img/blurred.jpg');
     color: #fff;
     font-weight:400;
+    margin-top:50px;
 }
 
 section#home h1 {
@@ -125,6 +138,8 @@ section#home p {
 #videotitle {
     margin-top:130px;
 }
+
+
 
 #video {
     padding-top: 15px;
