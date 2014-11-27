@@ -31,7 +31,7 @@
     <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   </head>
 
-  <body data-spy="scroll" data-offset="0" data-target="#navigation">
+  <body data-spy="scroll" data-offset="0" data-target=".navbar-collapse">
 
     <!-- Fixed navbar -->
 	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
@@ -47,7 +47,7 @@
             <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="#home" class="smothscroll">About</a></li>
-	            <li><a href="#video" class="smothscroll">Video</a></li>
+                <li><a href="#video" class="smothscroll">Video</a></li>
 	            <li><a href="#desktop" class="smothscroll">Desktop Features</a></li>
 	            <li><a href="#watch" class="smothscroll">Watch Features</a></li>
 	            <li><a href="#team" class="smothscroll">Team</a></li>
@@ -82,7 +82,7 @@
 	</section> <!--/ #home -->
 
 
-  <section id="video" name="video" class="background-dark">
+    <section id="video" name="video" class="background-dark">
 		<div class="container centered">
 			<h1 class="centered" id="videotitle">Video Demo</h1>
             <h4><i>See how it works!</i></h4>
@@ -290,9 +290,19 @@
     </script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
 	<script>
-	$('.carousel').carousel({
-	  interval: 3500
-	})
+	   $('.carousel').carousel({
+	       interval: 3500
+	   })
+    
+       $('.navbar li').click(function(e) {
+           $('.navbar li.active').removeClass('active');
+           var $this = $(this);
+           if (!$this.hasClass('active')) {
+               $this.addClass('active');
+               $.scrollTo(e.target.href);
+           }
+           e.preventDefault();
+       });
 	</script>
   </body>
 </html>
