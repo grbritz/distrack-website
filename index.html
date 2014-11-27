@@ -58,43 +58,43 @@
 
 
 	<section id="home" name="home">
-	    <div class="container" style="background-color:rgba(0, 0, 0, 0);padding-bottom:80px;padding-top:80px;">
+	    <div class="container" style="background-color:rgba(0, 0, 0, 0);padding-top:80px;">
 	    	<div class="row centered">
 	    		<div class="col-lg-8">
-	    			<img id="postercover" class="img-responsive" src="bootstrap/dist/img/laptop.png" alt="" style="position: absolute; top:40px; left:0;">
-            <img id="watchcover" class="img-responsive" src="bootstrap/dist/img/watch.png" alt="" style="position:absolute; top:40px;left:0;">
+	    			<img id="postercover" class="img-responsive" src="bootstrap/dist/img/laptop.png" alt="" style="position: absolute; top:30px; left:0;">
+                    <img id="watchcover" class="img-responsive" src="bootstrap/dist/img/watch.png" alt="" style="position:absolute; top:30px;left:0;">
 	    		</div>
-          <div class="col-lg-4" style="text-align:left;">
-              <h1>Beat Distractions, <strong>Refocus Yourself</strong></h1>
-              <p class="big-spaced">
-              	With so many distractions out there today, it's nearly impossible to stay focused while working or studying.
-              </p>
-              <p class="big-spaced">
-              	DisTrack helps you to be more productive by giving you insight into your work habits and providing you with tools to stay focused.
-              </p>
-              <h4><strong>Visit our poster session:</strong></h4>
-              <p>
-              	<u>Monday, December 8th 10:30am @ CSE Atrium</u>
-              </p>
-          </div>
+                <div class="col-lg-4" style="text-align:left;">
+                    <h1>Beat Distractions, <strong>Refocus Yourself</strong></h1>
+                    <p class="big-spaced">
+                    	With so many distractions out there today, it's nearly impossible to stay focused while working or studying.
+                    </p>
+                    <p class="big-spaced">
+                    	DisTrack helps you to be more productive by giving you insight into your work habits and providing you with tools to stay focused.
+                    </p>
+                    <h4><strong>Visit our poster session:</strong></h4>
+                    <p>
+                        <u>Monday, December 8th 10:30am @ CSE Atrium</u>
+                    </p>
+                </div>
 	    	</div>
 	    </div> <!--/ .container -->
 	</section> <!--/ #home -->
   <script>
-    // $(document).ready(function(){
-    //   $("#watchcover").delay(1000).effect("shake", { distance:4, times:10 }, 200);         
-    // });
+     $(document).ready(function(){
+        $("#watchcover").delay(1000).effect("shake", { distance:4, times:10 }, 200);         
+     });
   </script>
   
 
   <section id="video" class="background-dark">
 		<div class="container centered">
-			<h1 class="centered">Video Demo</h1>
+			<h1 class="centered" id="videotitle">Video Demo</h1>
             <h4><i>See how it works!</i></h4>
             <br>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<video width="100%" controls>
+					<video poster="bootstrap/dist/img/video_snapshot.jpg" width="100%" controls>
 						<source src="video.mp4" type="video/mp4">
 						Your browser is too old, get a new one!
 					</video>
@@ -104,7 +104,7 @@
 	</section><!-- /#video -->
       
    <section id="desktop" name="desktop">
-		<div id="intro" class="container">
+		<div class="container">
 			<div class="row">
 				<h1 class="centered">Desktop Application</h1>
 				<div id="cbp-fbscroller" class="cbp-fbscroller col-lg-12">
