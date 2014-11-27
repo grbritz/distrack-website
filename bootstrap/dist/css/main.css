@@ -80,7 +80,8 @@ a:after {
 }
 /* ==========================================================================
    Wrap Sections
-   ========================================================================== */
+========================================================================== */
+
 
 section {
     padding-top: 40px;
@@ -100,7 +101,7 @@ section {
 section#home {
     background-image: url('../img/blurred.jpg');
     padding-top:60px;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
     color: #fff;
     font-weight:400;
 }
@@ -125,6 +126,7 @@ section#home p {
 
 #video {
     padding-bottom: 65px;
+    background-color: #2f2f2f;
 }
 
 /* intro Wrap */
@@ -176,7 +178,9 @@ Team Section
 }
  
 
-
+/******************************
+Footer
+******************************/
 
 #footerwrap {
 	background-color: #2f2f2f;
@@ -200,14 +204,17 @@ Team Section
 	font-size: 18px;
 }
 
-/* Copyright Wrap */
+/******************************
+Features - Desktop
+******************************/
 
-#c {
-	background: #222222;
-	padding-top: 15px;
-	text-align: right;
-}
 
-#c p {
-	color: white
+/******************************
+Features - Watch
+******************************/
+
+.feature {
+    color:black;
+    padding-top:50px;
+    padding-bottom:50px;
 }
