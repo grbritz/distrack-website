@@ -100,8 +100,6 @@ section {
 
 section#home {
     background-image: url('../img/blurred.jpg');
-    padding-top:60px;
-    padding-bottom: 150px;
     color: #fff;
     font-weight:400;
 }
@@ -122,6 +120,10 @@ section#home h5 {
 
 section#home p {
 	text-align: left;
+}
+
+#videotitle {
+    margin-top:130px;
 }
 
 #video {
@@ -164,7 +166,7 @@ Team Section
 #team .team-member .name {
     margin-top:10px;
     margin-bottom:0px;
-    font-weight:bold;
+    font-weight:600;
 }
 #team .team-member .title {
     margin-bottom:0px;
