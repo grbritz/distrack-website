@@ -43,13 +43,13 @@ html, body,
 
 /* background-attachment does the trick */
 .cbp-fbscroller section {
-	position: relative;
 	background-position: center center;
 	background-repeat: no-repeat;
     height: 100%;
 }
 
 .no-touch .cbp-fbscroller section {
+    background-size: contain;
 	background-attachment: fixed;
 }
 
