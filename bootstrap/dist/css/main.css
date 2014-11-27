@@ -151,10 +151,6 @@ Team Section
     color: black;
 }
 
-#team .team-member-photo-wrap {
-    /*float: left;*/
-    /*padding-right: 25px;*/
-}
 
 #team .team-member img {
     width: 150px;
@@ -205,16 +201,19 @@ Footer
 }
 
 /******************************
-Features - Desktop
-******************************/
-
-
-/******************************
-Features - Watch
+Features
 ******************************/
 
 .feature {
     color:black;
     padding-top:50px;
     padding-bottom:50px;
+}
+
+h3.red {
+    color:#E62F33;
+}
+
+h3.blue {
+    color:#3FAFE1;
 }
