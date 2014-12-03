@@ -224,6 +224,7 @@ Features
 
 .feature {
     color:black;
+    height: 500px;
     padding-top:50px;
     padding-bottom:50px;
 }
