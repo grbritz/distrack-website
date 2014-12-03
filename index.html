@@ -32,6 +32,7 @@
   </head>
 
   <body id="page-top" data-spy="scroll"data-target="#navigation">
+
     <!-- Fixed navbar -->
 	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
 	      <div class="container">
@@ -46,7 +47,7 @@
             <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="#home" class="smothscroll">About</a></li>
-                <li><a href="#video" class="smothscroll">Video</a></li>
+	            <li><a href="#video" class="smothscroll">Video</a></li>
 	            <li><a href="#desktop" class="smothscroll">Desktop Features</a></li>
 	            <li><a href="#watch" class="smothscroll">Watch Features</a></li>
 	            <li><a href="#team" class="smothscroll">Team</a></li>
@@ -81,7 +82,7 @@
 	</section> <!--/ #home -->
 
 
-    <section id="video" name="video" class="background-dark">
+  <section id="video" name="video" class="background-dark">
 		<div class="container centered">
 			<h1 class="centered" id="videotitle">Video Demo</h1>
             <h4><i>See how it works!</i></h4>
@@ -102,20 +103,20 @@
 			<div class="row">
 				<h1 class="centered">Desktop Application</h1>
 				<div id="cbp-fbscroller" class="cbp-fbscroller col-sm-12">
-          <section id="fbsection6" class="row">
-              <div class="col-sm-4 feature">
-                  <h3 class="red">Reflect on Daily Activities</h3>
-                  <p>See how you spent your while you studied or worked broken down by activity and distraction category. You can see your performance for the whole day, or for the specific sessions you worked in that day. Try to maximize productive time!</p>
-              </div>
-              <div class="col-sm-8"></div>
-          </section>
-          <section id="fbsection7" class="row">
-              <div class="col-sm-4 feature">
-                  <h3 class="blue">View Trends</h3>
-                  <p>View your performance on weekly or monthly time spans to see how you're improving over time!</p>
-              </div>
-              <div class="col-sm-8"></div>
-          </section>
+                    <section id="fbsection6" class="row">
+                        <div class="col-sm-4 feature">
+                            <h3 class="red">Reflect on Daily Activities</h3>
+                            <p>See how you spent your while you studied or worked broken down by activity and distraction category. You can see your performance for the whole day, or for the specific sessions you worked in that day. Try to maximize productive time!</p>
+                        </div>
+                        <div class="col-sm-8"></div>
+                    </section>
+                    <section id="fbsection7" class="row">
+                        <div class="col-sm-4 feature">
+                            <h3 class="blue">View Trends</h3>
+                            <p>View your performance on weekly or monthly time spans to see how you're improving over time!</p>
+                        </div>
+                        <div class="col-sm-8"></div>
+                    </section>
           <section id="fbsection8" class="row"> 
               <div class="col-sm-4 feature">
                   <h3 class="red">Fight Distractions with Tools</h3>
@@ -164,7 +165,7 @@
                   <p>Your watch is an ideal place to use many of the tools we provide. Distraction notications will notify you when you get off task to remind you to stay focused.</p>
               </div>
           </section>
-          <section id="fbsection5" class="row">
+          <section id="fbsection4" class="row">
               <div class="col-sm-6"></div>
               <div class="col-sm-6 feature">
                   <h3 class="blue">Break Reminders</h3>
@@ -240,15 +241,7 @@
 	<div id="footerwrap">
 		<div class="container">
     	<div class="row centered">
-    		<div class="col-sm-4">
-    			<ul class="list-unstyled">
-    				<li><a href="#about">About</a></li>
-    				<li><a href="#video">Video</a></li>
-    				<li><a href="#desktop">Desktop Features</a></li>
-    				<li><a href="#watch">Watch Features</a></li>
-    				<li><a href="#team">Team</a></li>
-    			</ul>
-    		</div>
+
     		<div class="col-sm-4">
     			<ul class="list-unstyled">
     				<li><a href="getting-the-right-design.pdf">Getting the Right Design</a></li>
@@ -282,19 +275,9 @@
     </script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
 	<script>
-	   $('.carousel').carousel({
-	       interval: 3500
-	   })
-    
-       $('.navbar li').click(function(e) {
-           $('.navbar li.active').removeClass('active');
-           var $this = $(this);
-           if (!$this.hasClass('active')) {
-               $this.addClass('active');
-               $.scrollTo(e.target.href);
-           }
-           e.preventDefault();
-       });
+	$('.carousel').carousel({
+	  interval: 3500
+	})
 	</script>
   </body>
 </html>
