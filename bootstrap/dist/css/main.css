@@ -97,6 +97,7 @@ section {
 
 section#home {
     background-image: url('../img/blurred.jpg');
+    background-size: cover;
     color: #fff;
     font-weight:400;
     margin-top:50px;
