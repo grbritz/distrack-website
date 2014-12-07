@@ -239,6 +239,10 @@ Features
     }
 }
 
+.no-touch .cbp-fbscroller section {
+    background-size: inherit;
+}
+
 
 /******************************
 Design Documentation
